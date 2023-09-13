@@ -24,6 +24,11 @@ for item in range(items):
     my_tuple.append(item)
 
 item = input("Enter the item to remove : ")
+
+while item not in my_tuple:
+    print("Item is not in Tuple")
+    item = input("Enter the item you want to remove : ")
+    
 my_tuple.remove(item)
 
 my_tuple = tuple(my_tuple)
@@ -41,6 +46,11 @@ for item in range(items):
     my_tuple.append(item)
 
 item = input("Enter the item to replace into : ")
+
+while item not in my_tuple:
+    print("Item is not in Tuple")
+    item = input("Enter the item you want to remove : ")
+    
 replace_item = input("Enter the item to replaced : ")
 
 for i in range(len(my_tuple)):
